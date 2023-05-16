@@ -19,12 +19,25 @@ export default function Login() {
 
     return (
     <div className='Login-con'>
-        <h1 className='logo'>Vlinx.</h1>
-        <h1 className='Login-h1'>Welcome. 👋</h1>
-        <input type='Email' className='input' placeholder='Email'></input>
-        {value?<Home/>:
-        <a className='login-btn' href='#' onClick={handleAuth}>Login With Google</a>}
-        <a className='login-btn2' href='#'>Login</a>
+        <div className='nav'>
+            <div className='logo'>Vlinx</div> 
+        </div>
+        <div className='login-body'>
+            <div className='login-h1'>Login to Your Account</div>
+            <div className='login-desc'>Vlinx is a Global Chating Platform that faciliaties seamless communcation. With its sleek interface and advanced features. Linx offers sercure messaging, voice/vedio calls, file sharing, and group chats, enhancing your connection experience.</div>
+            <input type='email' placeholder='Email' className='input email'></input>
+            <input type='password' placeholder='Password' className='input email'></input>
+            <a href='#' className='login-btn'>Login To Your Account</a>
+        </div>
+        <div className='footer'>
+            <div className='privacy'>Privacy Policy</div>
+            <div className='copyright'>Copyright@Vlix 2023</div>
+        </div>
     </div>
   )
 }
+
+
+
+// {value?<Home/>:
+// // <a className='login-btn' href='#' onClick={handleAuth}>Login With Google</a>}
