@@ -21,23 +21,26 @@ export default function Login() {
     <div className='Login-con'>
         <div className='nav'>
             <div className='logo'>Vlinx</div> 
+            <a href='#' className='signin'>SignIn ---</a>
         </div>
         <div className='login-body'>
             <div className='login-h1'>Login to Your Account</div>
-            <div className='login-desc'>Vlinx is a Global Chating Platform that faciliaties seamless communcation. With its sleek interface and advanced features. Linx offers sercure messaging, voice/vedio calls, file sharing, and group chats, enhancing your connection experience.</div>
+            <div className='login-desc'>Vlinx is a Global Chating Platform that faciliaties seamless communcation.</div>
+            <div className='login-desc pad'>With its sleek interface and advanced features.</div>
             <input type='email' placeholder='Email' className='input email'></input>
-            <input type='password' placeholder='Password' className='input email'></input>
+            <input type='password' placeholder='Password' className='input password'></input>
             <a href='#' className='login-btn'>Login To Your Account</a>
+            {value?<Home/>:
+            <a className='login-ggl' onClick={handleAuth}>Login In With Google</a>}
+            <a href='#' className='forgot'>Forgot Password?</a>
         </div>
-        <div className='footer'>
+        <footer>
             <div className='privacy'>Privacy Policy</div>
             <div className='copyright'>Copyright@Vlix 2023</div>
-        </div>
+        </footer>
     </div>
   )
 }
 
 
 
-// {value?<Home/>:
-// // <a className='login-btn' href='#' onClick={handleAuth}>Login With Google</a>}
