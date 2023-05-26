@@ -1,9 +1,9 @@
 import { initializeApp } from "firebase/app";
-import { getAnalytics } from "firebase/analytics";
-import { getAuth, GoogleAuthProvider } from "firebase/auth";
+import { getAuth} from "firebase/auth";
+import { getFirestore } from "firebase/firestore"
 
 const firebaseConfig = {
-  apiKey: "AIzaSyCA0L9KS3jlnNuEqaU5vBgutMI4sN7204c",
+  apiKey: "",
   authDomain: "auth-6a2db.firebaseapp.com",
   projectId: "auth-6a2db",
   storageBucket: "auth-6a2db.appspot.com",
@@ -14,6 +14,7 @@ const firebaseConfig = {
 
 
 const app = initializeApp(firebaseConfig);
-const auth = getAuth(app)
-const provider = new GoogleAuthProvider();
-export {auth, provider};
+const auth = getAuth(app);
+const db = getFirestore(app);
+
+export {auth, db};

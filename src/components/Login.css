@@ -19,10 +19,15 @@
     padding-top: 13px;
 }
 
+.fa-long-arrow-right{
+    color: white;
+}
+
 .logo{
     color: white;
     font-size: 30px;
     padding-left: 20px;
+    cursor: pointer;
 }
 
 .login-body{
@@ -75,6 +80,7 @@
     border-radius: 5px;
     /* background-image: linear-gradient(to right, #01C29A, #E7CE70); */
     background-image: linear-gradient(to right, #f09457, #e41679);
+    cursor: pointer;
 }
 
 footer{
@@ -127,5 +133,9 @@ footer{
     font-size: 14px;
     color: white;
     font-weight: 200;
+}
+
+.fa-google{
+    color: white;
 }
 
