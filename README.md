@@ -1,6 +1,6 @@
 # React-Firebase Chat App
 
-![React-Firebase Chat App Screenshot](insert-screenshot-url-here.png)
+![React-Firebase Chat App Screenshot](./img/login.PNG)
 
 A realtime messaging web application built with ReactJS and Firebase. Connect with your friends and colleagues with this simple, yet powerful chat platform.
 
