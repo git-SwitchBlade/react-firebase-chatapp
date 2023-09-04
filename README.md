@@ -27,8 +27,6 @@ A realtime messaging web application built with ReactJS and Firebase. Connect wi
 - Sleek UI for easy chatting.
 - Responsive design. (Working on It.)
 
-*Feel free to list down more features*
-
 ## Getting Started
 
 ### Prerequisites
